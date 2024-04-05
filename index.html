@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Card Component</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom CSS */
+    /* Custom CSS */
+.card {
+    position: relative;
+    max-width: 18rem;
+    margin: 20px;
+}
+
+.top-section {
+    position: relative;
+    padding: 10px;
+    height: 200px;
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+.bottom-section {
+    position: relative;
+    padding: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    z-index: 1;
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+}
+
+.play-btn {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.badge {
+    margin-right: 5px;
+}
+
+.badge1 {
+    margin-right: 5px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        
+        <!-- Top Section -->
+        <div class="top-section">
+            <!-- Play Button -->
+            <button type="button" class="btn btn-success play-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <!-- Close Button -->
+            <button type="button" class="btn btn-danger close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="bottom-section">
+
+            <div class="flex-container">
+                <div class="badge badge-primary">Name</div>
+                <div class="badge1 badge-secondary">Popularity</div>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body">
+                <h5 class="card-title">details</h5>
+
+                <!-- Button -->
+                <a href="#" class="btn badge-secondary">Price</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional if needed for other functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
